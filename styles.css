@@ -1,0 +1,122 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f0e3; /* light pastel background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 100px; /* Space for the verse card at the bottom */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px; /* Limit container width for better readability */
+    padding: 20px;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #6b705c;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #a5a58d;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: #d0e1d4;
+    border: none;
+    border-radius: 8px;
+    color: #3d3b3b;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 160px; /* Set button width for uniformity */
+}
+
+.buttons button:hover {
+    background-color: #9dc5bb;
+}
+
+/* Verse Card Styling */
+.verse-card {
+    display: none;
+    padding: 20px;
+    background-color: #e9f5f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+    color: #3d3b3b;
+    max-width: 100%;
+    word-wrap: break-word; /* Ensures long text doesn't overflow */
+    margin-top: 20px; /* Start verse card below buttons */
+    max-height: 60vh; /* Allow it to grow but limit its height */
+    overflow-y: auto; /* Allow vertical scrolling if content exceeds the height */
+    transition: max-height 0.3s ease; /* Smooth height transition */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .buttons button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .verse-card {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .buttons button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+        width: 140px; /* Smaller buttons on mobile */
+    }
+
+    .verse-card {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
