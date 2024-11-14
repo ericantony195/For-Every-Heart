@@ -19,7 +19,7 @@ To experience the app directly in your browser, visit our online version:
 To install **For Every Heart** on your Android device:
 
 1. **Download the APK**:
-   - [Download Every Heart APK]([./For-Every-Heart.apk](https://github.com/ericantony195/For-Every-Heart/raw/refs/heads/main/For-Every-Heart.apk))
+   - [Download Every Heart APK]([[./For-Every-Heart.apk](https://github.com/ericantony195/For-Every-Heart/raw/refs/heads/main/For-Every-Heart.apk)](https://drive.google.com/file/d/1m2NJjLUpAQupTGes8rqfYLEQVpn_W-Bn/view))
    - Save the file to your Android device.
 
 2. **Install the APK**:
